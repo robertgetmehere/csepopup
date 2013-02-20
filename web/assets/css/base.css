@@ -1,0 +1,246 @@
+body {
+    background: url('../img/bg.jpg') no-repeat center center fixed;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.../img/bg.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg.jpg', sizingMethod='scale')";
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color:#545454;
+    font-family: "Helvetica Neue Light", Helvetica;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+}
+.coverTitle {
+    width:auto;
+    height:50px;
+    font-family: "bickham-script-pro",sans-serif;
+    font-size:50px;
+    display: block;
+    position: relative;
+    top:10px;
+    left:50px;
+    color:#efefef;
+    text-shadow:0 -1px 0 rgba(68,68,68,0.75);
+}
+.coverSignUp {
+    height:100px;
+    width:100%;
+    display:block;
+    position: relative;
+    top:400px;
+    left:0;
+    background-color: rgba(34,34,34,0.8);
+}
+.coverDistNote {
+    width:120px;
+    height:40px;
+    margin:30px 20px;
+    display: block;
+    float:left;
+    text-transform: uppercase;
+    color:#fefefe;
+    line-height: 20px;
+    font-size:14px;
+}
+.coverMoniker {
+    width:80px;
+    height:80px;
+    display: block;
+    float:left;
+    margin:10px 20px;;
+    background: url('../img/moniker_60.png') no-repeat center center;
+}
+input {
+    margin:30px;
+    height:20px;
+    padding:10px;
+    line-height: 20px;
+    font-size:16px;
+    width:200px;
+    display: block;
+    float:left;
+    border:0;
+    background: rgba(254,254,254,0.9);
+    box-shadow:inset 1px 1px 1px rgba(34,34,34,0.85);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+input[type="email"] {
+    width:300px;
+}
+.signUpButton{
+    width:120px;
+    height:40px;
+    margin:30px;
+    height:20px;
+    padding:10px;
+    line-height: 20px;
+    font-size:16px;
+    text-align: center;
+    display: block;
+    float:left;
+    cursor: pointer;
+    background-color: rgba(34,34,34,0.85);
+    box-shadow:1px 1px 2px rgba(34,34,34,0.85);
+    color:#fefefe;
+    text-shadow:0 -1px 0 rgba(68,68,68,0.75);
+}
+/**IPHONE PORTRAIT**/
+@media screen and (max-device-width: 480px) and (orientation:portrait) {
+
+    .coverTitle {
+        font-size:40px;
+        margin-left:20px;
+        margin-top:20px;
+    }
+}
+/**IPHONE LANDSCAPE**/
+@media screen and (max-device-width: 480px) and (orientation:landscape) {
+
+    .coverTitle {
+        font-size:8em;
+    }
+
+}
+
+/**IPAD PORTRAIT**/
+@media screen and (device-width: 768px) and (orientation:portrait) {
+    .coverSignUp {
+        height:100px;
+        width:100%;
+        display:block;
+        position: relative;
+        top:800px;
+        left:0;
+        background-color: rgba(34,34,34,0.8);
+    }
+    .coverDistNote {
+        width:120px;
+        height:40px;
+        margin:30px 20px;
+        display: block;
+        float:left;
+        text-transform: uppercase;
+        color:#fefefe;
+        line-height: 20px;
+        font-size:14px;
+    }
+    .coverMoniker {
+        width:80px;
+        height:80px;
+        display: block;
+        float:left;
+        margin:10px 20px;;
+        background: url('../img/moniker_60.png') no-repeat center center;
+    }
+    input {
+        margin:30px;
+        height:20px;
+        padding:10px;
+        line-height: 20px;
+        font-size:16px;
+        width:120px;
+        display: block;
+        float:left;
+        border:0;
+        background: rgba(254,254,254,0.9);
+        box-shadow:inset 1px 1px 1px rgba(34,34,34,0.85);
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+    }
+    input[type="email"] {
+        width:200px;
+    }
+    .signUpButton {
+        width:120px;
+        height:40px;
+        margin:30px;
+        height:20px;
+        padding:10px;
+        line-height: 20px;
+        font-size:16px;
+        text-align: center;
+        display: block;
+        float: left;
+        background-color: rgba(34,34,34,0.85);
+        box-shadow:1px 1px 2px rgba(34,34,34,0.85);
+        color:#fefefe;
+        text-shadow:0 -1px 0 rgba(68,68,68,0.75);
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+    }
+}
+/**IPAD LANDSCAPE**/
+@media screen and (device-width: 768px) and (orientation:landscape) {
+    .coverSignUp {
+        height:100px;
+        width:1024px;
+        display:block;
+        position: relative;
+        top:450px;
+        left:0;
+        background-color: rgba(34,34,34,0.8);
+    }
+    .coverDistNote {
+        width:120px;
+        height:40px;
+        margin:30px 20px;
+        display: block;
+        float:left;
+        text-transform: uppercase;
+        color:#fefefe;
+        line-height: 20px;
+        font-size:14px;
+    }
+    .coverMoniker {
+        width:80px;
+        height:80px;
+        display: block;
+        float:left;
+        margin:10px 20px;;
+        background: url('../img/moniker_60.png') no-repeat center center;
+    }
+    input {
+        margin:30px;
+        height:20px;
+        padding:10px;
+        line-height: 20px;
+        font-size:16px;
+        width:120px;
+        display: block;
+        float:left;
+        border:0;
+        background: rgba(254,254,254,0.9);
+        box-shadow:inset 1px 1px 1px rgba(34,34,34,0.85);
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+    }
+    input[type="email"] {
+        width:200px;
+    }
+    .signUpButton {
+        width:120px;
+        height:40px;
+        margin:30px;
+        height:20px;
+        padding:10px;
+        line-height: 20px;
+        font-size:16px;
+        text-align: center;
+        display: block;
+        float: left;
+        background-color: rgba(34,34,34,0.85);
+        box-shadow:1px 1px 2px rgba(34,34,34,0.85);
+        color:#fefefe;
+        text-shadow:0 -1px 0 rgba(68,68,68,0.75);
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+    }
+}

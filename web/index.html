@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="none"/>
+	<title>Proof of Concept</title>
+	<link href="assets/css/base.css" type="text/css" rel="stylesheet"/>
+	<script language="Javascript">
+		(function() {
+			var pattern=/localhost/gi;
+			if (pattern.test(window.location.host)) {
+				var config = {
+					kitId: 'ncf6rmq'
+				};
+			} else {
+				console.log('remote');
+				var config = {
+					kitId: 'hwf6jga'
+				};
+			}
+			var d = false;
+			var tk = document.createElement('script');
+			tk.src = '//use.typekit.net/' + config.kitId + '.js';
+			tk.type = 'text/javascript';
+			tk.async = 'true';
+			tk.onload = tk.onreadystatechange = function() {
+				var rs = this.readyState;
+				if (d || rs && rs != 'complete' && rs != 'loaded') return;
+				d = true;
+				try { Typekit.load(config); } catch (e) {}
+			};
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(tk, s);
+		})();
+	</script>
+</head>
+<body>
+	<div class="coverTitle">
+		Callender Signature
+	</div>
+	<div class="coverSignUp">
+		<div class="coverMoniker">
+
+		</div>
+		<div class="coverDistNote">
+			JOIN OUR<br/>
+			MAILING LIST
+		</div>
+		<div class="coverEmail">
+			<input type="text" name="name" placeholder="name"/>
+			<input type="email" name="email" placeholder="email"/>
+			<div class="signUpButton">
+				sign me up
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	function hideAddressBar()
+	{
+		if(!window.location.hash)
+		{
+			if(document.height < window.outerHeight)
+			{
+				document.body.style.height = (window.outerHeight + 50) + 'px';
+			}
+
+			setTimeout( function(){ window.scrollTo(0, 1); }, 50 );
+		}
+	}
+	window.addEventListener("load", function(){ if(!window.pageYOffset){ hideAddressBar(); } } );
+	window.addEventListener("orientationchange", hideAddressBar );
+</script>
+</html>
