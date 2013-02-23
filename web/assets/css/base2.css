@@ -1,0 +1,105 @@
+body {
+    background: rgb(28,28,28);
+    color:#fefefe;
+    font-family: "Helvetica Neue Light", Helvetica;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+}
+a {
+    color:#efefef;
+    text-decoration: none;
+}
+.coverTitle {
+    width:auto;
+    height:50px;
+    font-family: "bickham-script-pro",sans-serif;
+    font-size:32px;
+    line-height: 50px;
+    display: block;
+    position: absolute;
+    top:20px;
+    left:50px;
+    color:#efefef;
+    text-shadow:0 -1px 0 rgba(68,68,68,0.75);
+}
+.coverCaption {
+    position:absolute;
+    left:100px;
+    top:160px;
+    display: block;
+    height:160px;
+    font-size:160px;
+    line-height: 160px;
+    font-family: "bickham-script-pro",sans-serif;
+    text-align: right;
+}
+.coverYear {
+    position: absolute;
+    left:800px;
+    top:280px;
+    display: block;
+    text-align: right;
+    font-size:24px;
+
+}
+.coverText {
+    left:100px;
+    top:350px;
+    width:768px;
+    position: absolute;
+    display: block;
+    line-height: 20px;
+}
+.coverIcons {
+    width:300px;
+    height:50px;
+    display: block;
+    position: absolute;
+    top:20px;
+    right:50px;
+}
+.coverIcons a {
+    width:50px;
+    height:50px;
+    margin-right:20px;
+    display: block;
+    float: right;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+    border: 0;
+    text-decoration: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.coverIcons a:hover {
+    background-color: rgba(34,34,34,0.4);
+}
+.twitter {
+    background-image: url('../img/twitter_icon_off.png');
+}
+.facebook {
+    background-image: url('../img/facebook_icon_off.png');
+}
+.instagram {
+    background-image: url('../img/instagram_icon_off.png');
+}
+.pinterest {
+    background-image: url('../img/pinterest_icon_off.png');
+}
+.footer {
+    width:100%;
+    height:20px;
+    position: fixed;
+    left:50px;
+    bottom:20px;
+}
+.copy {
+    line-height: 20px;
+    width:200px;
+    float:left;
+    color:#efefef;
+    font-size:12px;
+}

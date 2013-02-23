@@ -12,6 +12,10 @@ body {
     padding:0;
     overflow:hidden;
 }
+a {
+    color:#efefef;
+    text-decoration: none;
+}
 .coverTitle {
     width:auto;
     height:50px;
@@ -19,7 +23,7 @@ body {
     font-size:120px;
     display: block;
     position: absolute;
-    top:30px;
+    top:10px;
     left:40px;
     color:#efefef;
     text-shadow:0 -1px 0 rgba(68,68,68,0.75);
@@ -41,6 +45,10 @@ body {
     text-shadow:0 -1px 0 rgba(68,68,68,0.75);
     text-transform: uppercase;
 }
+.coverCaption a {
+    font-size:14px;
+    padding-left:10px;
+}
 .coverIcons {
     width:300px;
     height:50px;
@@ -57,7 +65,6 @@ body {
     float: right;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 24px 24px;
     cursor: pointer;
     border: 0;
     text-decoration: none;
@@ -76,6 +83,9 @@ background-color: rgba(34,34,34,0.4);
 }
 .instagram {
     background-image: url('../img/instagram_icon_off.png');
+}
+.pinterest {
+    background-image: url('../img/pinterest_icon_off.png');
 }
 .footer {
     width:100%;
@@ -120,6 +130,11 @@ background-color: rgba(34,34,34,0.4);
     margin:10px 20px;
     background: url('../img/moniker_60.png') no-repeat center center;
 }
+form {
+    margin:0;
+    padding:0;
+    border:0;
+}
 input {
     margin:30px;
     height:20px;
@@ -138,6 +153,11 @@ input {
 }
 input[type="email"] {
     width:300px;
+}
+input[type="submit"] {
+    width:120px;
+    height:40px;
+    -webkit-appearance: none;
 }
 .signUpButton{
     width:120px;
@@ -266,8 +286,18 @@ input[type="email"] {
 /**IPHONE LANDSCAPE**/
 @media screen and (max-device-width: 480px) and (orientation:landscape) {
 
-    .coverTitle {
-        font-size:8em;
+    input {
+        width:170px;
+    }
+    input[type="email"] {
+        width:170px;
+    }
+    .footer {
+        width:100%;
+        height:20px;
+        position: relative;
+        top:450px;
+        left:0;
     }
 
 }
@@ -376,70 +406,17 @@ input[type="email"] {
 }
 /**IPAD LANDSCAPE**/
 @media screen and (device-width: 768px) and (orientation:landscape) {
-    .coverSignUp {
-        height:100px;
-        width:1024px;
-        display:block;
+    input {
+        width:170px;
+    }
+    input[type="email"] {
+        width:170px;
+    }
+    .footer {
+        width:100%;
+        height:20px;
         position: relative;
         top:450px;
         left:0;
-        background-color: rgba(34,34,34,0.8);
-    }
-    .coverDistNote {
-        width:120px;
-        height:40px;
-        margin:30px 20px;
-        display: block;
-        float:left;
-        text-transform: uppercase;
-        color:#fefefe;
-        line-height: 20px;
-        font-size:14px;
-    }
-    .coverMoniker {
-        width:80px;
-        height:80px;
-        display: block;
-        float:left;
-        margin:10px 20px;;
-        background: url('../img/moniker_60.png') no-repeat center center;
-    }
-    input {
-        margin:30px;
-        height:20px;
-        padding:10px;
-        line-height: 20px;
-        font-size:16px;
-        width:120px;
-        display: block;
-        float:left;
-        border:0;
-        background: rgba(254,254,254,0.9);
-        box-shadow:inset 1px 1px 1px rgba(34,34,34,0.85);
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        border-radius: 5px;
-    }
-    input[type="email"] {
-        width:200px;
-    }
-    .signUpButton {
-        width:120px;
-        height:40px;
-        margin:30px;
-        height:20px;
-        padding:10px;
-        line-height: 20px;
-        font-size:16px;
-        text-align: center;
-        display: block;
-        float: left;
-        background-color: rgba(34,34,34,0.85);
-        box-shadow:1px 1px 2px rgba(34,34,34,0.85);
-        color:#fefefe;
-        text-shadow:0 -1px 0 rgba(68,68,68,0.75);
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        border-radius: 5px;
     }
 }
