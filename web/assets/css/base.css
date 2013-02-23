@@ -37,17 +37,11 @@ a {
     top:250px;
 }
 .coverCaption {
-    height:50px;
-    line-height: 50px;
-    font-size:20px;
-    margin-left:40px;
-    display: block;    color:#efefef;
-    text-shadow:0 -1px 0 rgba(68,68,68,0.75);
-    text-transform: uppercase;
+
 }
 .coverCaption a {
-    font-size:14px;
-    padding-left:10px;
+    color:#545454;
+    font-size:12px;
 }
 .coverIcons {
     width:300px;
@@ -87,11 +81,34 @@ background-color: rgba(34,34,34,0.4);
 .pinterest {
     background-image: url('../img/pinterest_icon_off.png');
 }
+.awardIcon {
+    width:100px;
+    height:75px;
+    padding-top:25px;
+    display: block;
+    float:left;
+    font-size:14px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    background-color:#fefefe;
+    color:#545454;
+    border: 1px solid double #fefefe;
+}
+.awardFirst {
+    margin-left:100px;
+}
+.awardSecond {
+    margin-left:40px;
+}
 .footer {
     width:100%;
     height:20px;
-    position: relative;
-    top:420px;
+    position: absolute;
+    bottom:20px;
     left:0;
 }
 .copy {
@@ -103,11 +120,12 @@ background-color: rgba(34,34,34,0.4);
     font-size:12px;
 }
 .coverSignUp {
+    clear:both;
     height:100px;
     width:100%;
     display:block;
     position: relative;
-    top:380px;
+    top:340px;
     left:0;
     background-color: rgba(34,34,34,0.8);
 }
@@ -189,18 +207,25 @@ input[type="submit"] {
     .coverTitle {
         font-size:100px;
     }
+    .awardIcon {
+        float:none;
+        margin-top:50px;
+    }
+    .awardFirst {
+        margin-left:100px;
+    }
+    .awardSecond {
+        margin-left:100px;
+    }
+    .coverSignUp {
+        position:absolute;
+        top:80%;
+    }
     .coverLaunch {
         width:100%;
         height:50px;
         position: relative;
         display: block;
-    }
-    .footer {
-        width:100%;
-        height:20px;
-        position: relative;
-        top:660px;
-        left:0;
     }
     .copy {
         line-height: 20px;
@@ -210,78 +235,7 @@ input[type="submit"] {
         color:#333;
         font-size:12px;
     }
-    .coverSignUp {
-        height:300px;
-        width:100%;
-        display:block;
-        position: relative;
-        top:660px;
-        left:0;
-        background-color: rgba(34,34,34,0.8);
-    }
-    .coverMoniker {
-        width:20%;
-        height:80px;
-        display: block;
-        float:left;
-        margin:10px 0;
-        background: url('../img/moniker_60.png') no-repeat center center;
-    }
-    .coverEmail {
-        width:80%;
-        height:140px;
-        display: block;
-        float:right;
-    }
-    .coverDistNote {
-        width:100%;
-        height:20px;
-        margin:20px 0 10px 0;
-        display: block;
-        float:left;
-        text-transform: uppercase;
-        color:#fefefe;
-        line-height: 20px;
-        font-size:14px;
-    }
-    .coverForm {
-        width:320px;
-        height:auto;
-        display: block;
-    }
-    input {
-        margin:20px 0;
-        height:20px;
-        padding:10px;
-        line-height: 20px;
-        font-size:16px;
-        width:300px;
-        display: block;
-        border:0;
-        background: rgba(254,254,254,0.9);
-        box-shadow:inset 1px 1px 1px rgba(34,34,34,0.85);
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        border-radius: 5px;
-    }
-    .signUpButton {
-        width:120px;
-        height:40px;
-        margin:20px 0 0 0;
-        height:20px;
-        padding:10px;
-        line-height: 20px;
-        font-size:16px;
-        text-align: center;
-        display: block;
-        float: left;
-        background-color: rgba(34,34,34,0.85);
-        color:#fefefe;
-        text-shadow:0 -1px 0 rgba(68,68,68,0.75);
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        border-radius: 5px;
-    }
+
 }
 /**IPHONE LANDSCAPE**/
 @media screen and (max-device-width: 480px) and (orientation:landscape) {
@@ -316,12 +270,25 @@ input[type="submit"] {
     .coverTitle {
         font-size:100px;
     }
-    .footer {
+    .awardIcon {
+        float:none;
+        margin-top:50px;
+    }
+    .awardFirst {
+        margin-left:100px;
+    }
+    .awardSecond {
+        margin-left:100px;
+    }
+    .coverSignUp {
+        position:absolute;
+        top:80%;
+    }
+    .coverLaunch {
         width:100%;
-        height:20px;
+        height:50px;
         position: relative;
-        top:855px;
-        left:0;
+        display: block;
     }
     .copy {
         line-height: 20px;
@@ -331,92 +298,19 @@ input[type="submit"] {
         color:#333;
         font-size:12px;
     }
-    .coverSignUp {
-        height:300px;
-        width:100%;
-        display:block;
-        position: relative;
-        top:850px;
-        left:0;
-        background-color: rgba(34,34,34,0.8);
-    }
-    .coverMoniker {
-        width:20%;
-        height:80px;
-        display: block;
-        float:left;
-        margin:10px 0;
-        background: url('../img/moniker_60.png') no-repeat center center;
-    }
-    .coverEmail {
-        width:80%;
-        height:140px;
-        display: block;
-        float:right;
-    }
-    .coverDistNote {
-        width:100%;
-        height:20px;
-        margin:20px 0 10px 0;
-        display: block;
-        float:left;
-        text-transform: uppercase;
-        color:#fefefe;
-        line-height: 20px;
-        font-size:14px;
-    }
-    .coverForm {
-        width:320px;
-        height:auto;
-        display: block;
-    }
-    input {
-        margin:20px 0;
-        height:20px;
-        padding:10px;
-        line-height: 20px;
-        font-size:16px;
-        width:300px;
-        display: block;
-        border:0;
-        background: rgba(254,254,254,0.9);
-        box-shadow:inset 1px 1px 1px rgba(34,34,34,0.85);
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        border-radius: 5px;
-    }
-    .signUpButton {
-        width:120px;
-        height:40px;
-        margin:20px 0 0 0;
-        height:20px;
-        padding:10px;
-        line-height: 20px;
-        font-size:16px;
-        text-align: center;
-        display: block;
-        float: left;
-        background-color: rgba(34,34,34,0.85);
-        color:#fefefe;
-        text-shadow:0 -1px 0 rgba(68,68,68,0.75);
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        border-radius: 5px;
-    }
 }
 /**IPAD LANDSCAPE**/
 @media screen and (device-width: 768px) and (orientation:landscape) {
+    .awardFirst {
+        margin-left:70px;
+    }
+    .awardSecond {
+        margin-left:40px;
+    }
     input {
         width:170px;
     }
     input[type="email"] {
         width:170px;
-    }
-    .footer {
-        width:100%;
-        height:20px;
-        position: relative;
-        top:450px;
-        left:0;
     }
 }
