@@ -87,22 +87,20 @@ background-color: rgba(34,34,34,0.4);
     padding-top:25px;
     display: block;
     float:left;
-    font-size:14px;
-    line-height: 16px;
+    font-size:20px;
+    line-height: 24px;
     text-align: center;
     text-transform: uppercase;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
-    background-color:#fefefe;
-    color:#545454;
-    border: 1px solid double #fefefe;
+    color:#fefefe;
+}
+.awardIcon a {
+    color:#fefefe;
 }
 .awardFirst {
     margin-left:100px;
 }
 .awardSecond {
-    margin-left:40px;
+    margin-left:60px;
 }
 .footer {
     width:100%;
